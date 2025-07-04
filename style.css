@@ -36,6 +36,31 @@ nav, ul, li, a {
     text-decoration: none;
     font-weight: bold;
 }
+/*galeria */
+.Galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    text-align: center;
+    background-color: white;
+}
+
+.Galeria a {
+    text-decoration: none;
+    color: black;
+}
+
+.Galeria img {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    transition: tarnsform 0.3s ease;
+}
+
+.Galeria img:hover {
+    transform: scale(1.05);
+}
 
 main {
     max-width: 800px;
